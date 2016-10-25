@@ -130,4 +130,4 @@ NSString * url = @"https://...";
 ```
 
 
-注：Demo给出了示例代码，具体的证书及地址请根据实际情况修改
+注：[Demo](https://github.com/SilverBulletZyp/ZYPHttpsRequest)给出了示例代码，具体的证书及地址请根据实际情况修改
