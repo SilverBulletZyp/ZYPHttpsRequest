@@ -1,7 +1,7 @@
 # ZYPHttpsRequest
 
 
-* 使用`AFNetWorking`发`HTTPS`请求
+* 使用`AFNetWorking`进行`HTTPS`请求
 
 
 由于`iOS 9`新特性`App Transport Security`，我们只能暂时将请求地址设为全部允许
@@ -59,9 +59,7 @@ openssl x509 -in XXX.crt -out XXX.cer -outform der
 在mac系统上安装`.crt`文件，进入`钥匙串访问`，选中安装好的`.crt`文件，选择`文件`->`导出项目`，保存格式为`.cer`
 
 
-之后导入Xcode开发的项目中
-
-同时，在`.plist`文件中设置
+之后将其导入Xcode开发的项目，同时，在`.plist`文件中进行如下设置
 
 
 ```xml
