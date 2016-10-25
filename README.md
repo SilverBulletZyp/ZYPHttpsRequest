@@ -73,7 +73,12 @@ openssl x509 -in XXX.crt -out XXX.cer -outform der
 
 ## AFN请求
 
-代码部分只需要调用`AFSecurityPolicy.h`这个类
+代码部分会使用到`AFSecurityPolicy.h`这个类，可以看下官方描述：
+
+> `AFSecurityPolicy` evaluates server trust against pinned X.509 certificates and public keys over secure connections.
+> Adding pinned SSL certificates to your app helps prevent man-in-the-middle attacks and other vulnerabilities. Applications dealing with sensitive customer data or financial information are strongly encouraged to route all communication over an HTTPS connection with SSL pinning configured and enabled.
+
+即得知其用于安全策略认证相关
 
 
 * 1.证书路径
